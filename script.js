@@ -34,7 +34,7 @@ function searchAndPlay(songname, index) {
         if (!sound.paused) {
           sound.pause();
           $('#pausebutton').html('RESUME');
-          $('#pausebutton').css('padding', '4px 9px 4px 9px');
+          $('#pausebutton').css('padding', '4px 7px 4px 8px');
         } else if (sound.paused) {
           sound.play();
           $('#pausebutton').html('PAUSE');
@@ -79,7 +79,7 @@ $(document).ready(function() {
       youtubeSearch(song_name);
       buttonText = 'REMIX';
       $('#songbutton').html(buttonText);
-      $('#songbutton').css('padding', '4px 14px 4px 14px');
+      $('#songbutton').css('padding', '4px 11px 4px 11px');
     }
   });
 
@@ -97,7 +97,7 @@ $(document).ready(function() {
     if ($('#songname').val() == song_name) {
       buttonText = 'REMIX';
       $('#songbutton').html(buttonText);
-      $('#songbutton').css('padding', '4px 14px 4px 14px');
+      $('#songbutton').css('padding', '4px 11px 4px 11px');
     }
   });
 
@@ -172,7 +172,7 @@ function loadPlayer() {
         if (player.getPlayerState() == 1) {
           player.pauseVideo();
           $('#pausebutton').html('RESUME');
-          $('#pausebutton').css('padding', '4px 9px 4px 9px');
+          $('#pausebutton').css('padding', '4px 7px 4px 8px');
         } else if (player.getPlayerState() == 2) {
           player.playVideo();
           $('#pausebutton').html('PAUSE');
